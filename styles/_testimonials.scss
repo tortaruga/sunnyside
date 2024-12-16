@@ -1,0 +1,48 @@
+.testimonials-section {
+    padding: 3rem 2rem;   
+    background-color: $white; 
+} 
+
+.testimonials-title {
+    text-align: center;
+    @include heading-bold(); 
+    text-transform: uppercase;
+    color: $grey; 
+    font-size: 1.2rem;    
+    letter-spacing: .2rem;
+}
+
+.testimonials-container {
+    @include flex(row, center, stretch);
+    gap: 1.5rem;     
+    margin-block: 4rem; 
+    flex-wrap: wrap; 
+}
+
+.testimonial {
+    @include flex(column, space-around, center); 
+    text-align: center; 
+    color: $medium-grey; 
+    line-height: 170%; 
+    gap: 2rem;   
+    margin-bottom: 4rem;  
+    width: 350px;  
+}
+
+.testimonial-img { 
+    border-radius: 50%;  
+    width: 4rem;    
+}
+
+.client-name {
+    @include heading-bold();
+    color: $dark-blue;
+    margin: 0;  
+    font-size: 1.3rem;   
+}
+
+.client-profession {
+    color: $grey;
+    margin: 0; 
+    font-size: 1rem;
+}

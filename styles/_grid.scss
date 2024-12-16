@@ -1,0 +1,81 @@
+.grid-section {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.grid-item {
+    padding: 4rem 2rem;
+    text-align: center;
+    @include flex(column, center, center); 
+    line-height: 160%; 
+    background-color: $white;  
+}
+
+.img-wrapper {
+    aspect-ratio: 1; 
+}
+
+.transform-img {
+    @include bg-img($transform-mobile); 
+}
+
+.stand-out-img {
+    @include bg-img($stand-out-mobile); 
+}
+
+.item-title {
+    @include heading-bold(); 
+    font-size: 2.2rem;   
+    line-height: 120%;   
+}
+
+.item-paragraph {
+    color: $medium-grey;  
+}
+
+.learn-more {
+    text-transform: uppercase;
+    @include heading-bold(); 
+    color: $dark-blue;  
+    margin-top: .5rem; 
+    position: relative;
+    z-index: 1; 
+    transition: .3s;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 110%;  
+        height: .5rem; 
+        border-radius: 1rem; 
+        background-color: $yellow;   
+        opacity: .25; 
+        left: -5%;   
+        bottom: .1rem;
+    }
+}
+
+.stand-out .learn-more::after {
+    background-color: $red; 
+} 
+
+.learn-more:hover:after {
+    opacity: 1; 
+    z-index: -1; 
+ }
+
+.graphic-design {
+    @include bg-img($graphic-design-mobile); 
+    color: $graphic-design;
+    height: 100vh; 
+    justify-content: flex-end; 
+    
+    .item-paragraph {
+        color: inherit; 
+    }
+}
+
+.photography {
+    @extend .graphic-design;
+    @include bg-img($photography-mobile); 
+}

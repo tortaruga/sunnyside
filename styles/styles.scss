@@ -1,0 +1,25 @@
+@import '_colors';
+@import '_variables';
+@import '_mixins';
+@import '_globals';
+@import '_nav';
+@import '_header';
+@import '_grid';
+@import '_testimonials'; 
+@import '_gallery';
+@import '_footer';
+
+body {
+    margin: 0;
+    @include text();  
+    font-size: 18px; 
+}
+
+main {
+    max-width: 1400px;
+    margin: auto; 
+}
+ 
+@import '_media-queries';
+
+  

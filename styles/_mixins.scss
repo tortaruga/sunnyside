@@ -1,0 +1,27 @@
+@mixin bg-img($img) {
+    background: $img no-repeat;
+    background-position: center; 
+    background-size: cover;     
+}
+
+@mixin text() {
+    font-family: 'Barlow', serif;
+    font-weight: 600;
+}
+
+@mixin heading() {
+    font-family: 'fraunces', serif;
+    font-weight: 700;
+}
+
+@mixin heading-bold() {
+    font-family: 'fraunces', serif;
+    font-weight: 900;
+}
+
+@mixin flex($dir, $jus, $al) {
+    display: flex;
+    flex-direction: $dir; 
+    justify-content: $jus;
+    align-items: $al;
+}

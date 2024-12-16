@@ -1,0 +1,65 @@
+footer {
+    background-color: hsl(168, 55%, 68%); 
+    padding: 3rem 2rem; 
+    text-align: center; 
+}
+
+.footer-nav-links { 
+    @include flex(row, center, center); 
+    margin-block: 2rem; 
+    gap: 3.5rem;  
+}
+
+.footer-link {
+    color: $footer;  
+    &:hover {
+        color: $white; 
+    }
+}
+
+.socials {
+    @include flex(row, center, center);
+    gap: 2.5rem;  
+    margin-top: 5rem; 
+}
+
+.social-link {
+    display: block;  
+    width: 1.5rem;     
+    aspect-ratio: 1;
+}
+
+.fb {
+    @include bg-img($fb);  
+
+    &:hover {
+        @include bg-img($fb-white);
+    }
+}
+
+.insta { 
+    @include bg-img($instagram);  
+
+    
+    &:hover {
+        @include bg-img($instagram-white);
+    }
+} 
+ 
+.twitter {
+    @include bg-img($twitter);  
+
+    
+    &:hover { 
+        @include bg-img($twitter-white);
+    }
+}
+
+.pinterest {
+    @include bg-img($instagram);  
+
+    
+    &:hover {
+        @include bg-img($pinterest-white);
+    } 
+} 

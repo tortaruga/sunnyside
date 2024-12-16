@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="stylesheet" href="./styles/styles.css"> 
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+    </style>
+</head>
+<body>
+  
+  <nav>
+    <img src="./images/logo.svg" alt="logo" class="nav--logo logo">
+
+    <button class="mobile-menu-btn" aria-label="mobile menu button"></button>
+    
+    <ul class="mobile-menu hide"> 
+      <li><a class="menu-link mobile-menu-link" href="#">About</a></li>
+      <li><a class="menu-link mobile-menu-link" href="#">Services</a></li>
+      <li><a class="menu-link mobile-menu-link" href="#">Projects</a></li>
+      <li><a class="menu-link mobile-menu-link contact-link" href="#">Contact</a></li>
+    </ul> 
+
+    <ul class="desktop-menu">
+      <li><a class="menu-link desktop-menu-link" href="#">About</a></li>
+      <li><a class="menu-link desktop-menu-link" href="#">Services</a></li>
+      <li><a class="menu-link desktop-menu-link" href="#">Projects</a></li>
+      <li><a class="menu-link desktop-menu-link contact-link" href="#">Contact</a></li>
+    </ul> 
+  </nav>
+
+  <main>
+    <header>
+      <h1 class="header-title">We are creatives</h1>
+      <img src="./images/icon-arrow-down.svg" alt="arrow down">
+    </header>
+ 
+    <section class="grid-section">
+      <div class="grid-item img-wrapper transform-img"></div>
+       
+      <div class="transform grid-item">
+        <h1 class="item-title">Transform your brand</h1>
+        <p class="item-paragraph">We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <a class="learn-more" href="#">Learn more</a> 
+        </div>
+
+        <div class="grid-item img-wrapper stand-out-img"></div>
+    
+        <div class="grid-item stand-out">
+          <h1 class="item-title">Stand out to the right audience</h1>
+          <p class="item-paragraph">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+          <a class="learn-more" href="#">Learn more</a>
+        </div>
+
+        <div class="grid-item graphic-design">
+          <h1 class="item-title">Graphic design</h1>
+          <p class="item-paragraph">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </div>
+
+        <div class="grid-item photography">
+          <h1 class="item-title">Photography</h1>
+          <p class="item-paragraph">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+      </section>
+     
+      <section class="testimonials-section">
+        <h1 class="testimonials-title">Client testimonials</h1>
+
+        <div class="testimonials-container">
+          <div class="testimonial">
+            <img src="./images/image-emily.jpg" alt="client image" class="testimonial-img">
+            <p class="testimonial-p">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+
+            <div class="client-info">
+              <h1 class="client-name">Emily R.</h1>
+              <p class="client-profession">Marketing Director</p>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <img src="./images/image-thomas.jpg" alt="client image" class="testimonial-img">
+            <p class="testimonial-p">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+            <div class="client-info">
+              <h1 class="client-name">Thomas S.</h1>
+              <p class="client-profession">Chief Operating Officer</p>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <img src="./images/image-jennie.jpg" alt="client image" class="testimonial-img">
+            <p class="testimonial-p">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+
+            <div class="client-info">
+              <h1 class="client-name">Jennie F.</h1>
+              <p class="client-profession">Business Owner</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="gallery-img"></div>
+        <div class="gallery-img"></div>
+        <div class="gallery-img"></div>
+        <div class="gallery-img"></div>
+      </section>
+      
+      <footer>
+        <img src="./images/logo-footer.svg" alt="logo" class="logo footer-logo">
+
+        <ul class="footer-nav-links">
+          <li><a class="footer-link" href="#">About</a></li>
+          <li><a class="footer-link" href="#">Services</a></li>
+          <li><a class="footer-link" href="#">Projects</a></li>
+        </ul>
+
+        <ul class="socials">
+          <li><a href="#" class="social-link fb"></a></li>
+          <li><a href="#" class="social-link insta"></a></li>
+          <li><a href="#" class="social-link twitter"></a></li>
+          <li><a href="#" class="social-link pinterest"></a></li>
+        </ul>
+      </footer>
+  </main>
+   
+  <script src="./app.js"></script>
+</body>
+</html>

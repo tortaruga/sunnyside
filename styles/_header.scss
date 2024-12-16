@@ -1,0 +1,15 @@
+header {
+    @include bg-img($header-bg-mobile);
+    padding: 7.5rem 2rem;   
+    @include flex(column,  center, center);
+    color: $white; 
+    gap: 2rem;  
+}
+
+.header-title {
+    @include heading-bold();    
+    text-transform: uppercase; 
+    text-align: center;  
+    letter-spacing: .3rem;   
+    font-size: calc(2rem + 2vw);   
+}
